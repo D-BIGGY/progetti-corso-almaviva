@@ -1,0 +1,26 @@
+<html>
+
+<head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+
+    <form [formGroup]="formreattivo" (ngSubmit)="ngOnSubmitReact()">
+        <input type="text" id="luser1" name ="luser1"  formControlName="username" class="fadeIn second" placeholder = "username"> <br>
+        <p *ngIf = "!formreattivo.get('username')?.valid && formreattivo.get('username')?.touched"> Username non valido</p>
+        <input type="password" id = "lpw1" name ="lpw1"  formControlName="password" class="fadeIn third" placeholder="password"> <br>
+        <p *ngIf = "!formreattivo.get('password')?.valid && formreattivo.get('password')?.touched"> Password non valida</p>
+        <button type = "submit" [disabled]="!formreattivo.valid"> Invia </button>
+         
+      </form>
+
+
+    
+
+  </div>
+</div>
+</html>
