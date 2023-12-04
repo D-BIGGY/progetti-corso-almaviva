@@ -1,0 +1,29 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Form registrazione</h5>
+      <p class="card-text">Inserisci qui i tuoi dati </p>
+      <label>Nome</label><br>
+      <input type="text" [(ngModel)]="nome"><br>
+      <label >Cognome</label><br>
+      <input type="text" [(ngModel)]="cognome"><br>
+      <label>email</label><br>
+      <input type="text" [(ngModel)]="email"><br>
+      <label>Età</label><br>
+      <input type="number" [(ngModel)]="eta"><br><br>
+
+      <button (click)="clicca()"  class="btn btn-primary">Registrazione</button> | 
+      <button (click)="reset()"  class="btn btn-primary">Reset</button>
+    </div>
+  </div>
+  <br>
+
+  <div style=" background-color: aquamarine; width: 500px;border-color: black;border-style: solid;" >
+  <br>
+   Repilogo:<br>
+<img style="height: 100px; width: 100px;" [src]="etaminima ? percorosok : percorsono"><br>
+  <label>Nome</label> : {{nome}}<br>
+  <label>Cognome</label> : {{cognome}}<br>
+  <label>Email</label> : {{email}}<br>
+  <label>Età</label> : {{eta}}<br>
+  <br>
+  </div>
