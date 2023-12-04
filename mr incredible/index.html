@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function bozo(){
+                const Http = new XMLHttpRequest();
+                const url = 'http://localhost:4500/';
+                Http.open("GET",url);
+                Http.send();
+
+                Http.onreadystatechange = (e) => {
+                    console.log(Http.responseText);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="bozo()">greve</button>
+    </body>
+</html>
