@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Insert title here</title>
+	</head>
+	<body style="background-color: black; color:white; text-align: center;">
+        <form action="#" th:action="@{/}" th:object="${personaForm}" method="POST">
+            <table>
+                <tr>
+                    <td>Nome:</td>
+                    <td><input type="text" th:field="*{nome}"/></td>
+                    <td th:if = "${#fields.hasErrors('nome')}" th:errors="*{nome}">Nome Errore</td>
+                </tr>
+                <tr>
+                    <td>Cognome:</td>
+                    <td><input type="text" th:field="*{cognome}"/></td>
+                    <td th:if = "${#fields.hasErrors('cognome')}" th:errors="*{cognome}">Nome Errore</td>
+                </tr>
+                <tr>
+                    <td>età:</td>
+                    <td><input type="text" th:field="*{eta}"/></td>
+                    <td th:if = "${#fields.hasErrors('eta')}" th:errors="*{eta}">Nome Errore</td>
+                </tr>
+                <tr>
+					<td>Alpha?</td>
+                    <td><input type="checkbox" th:field="*{alpha}"></td>
+                    <td th:if = "${#fields.hasErrors('alpha')}" th:errors="*{alpha}">Nome Errore</td>
+                </tr>
+                <tr>
+					<td>email:</td>
+					<input type="email" th:field="*{email}">
+					<td th:if = "${#fields.hasErrors('email')}" th:errors="*{email}">Nome Errore</td>
+				</tr>
+                <tr>
+                    <td>
+                        <button type="submit">
+                            Submit
+                        </button>
+                    </td>
+                </tr>
+                
+            </table>
+        </form>
+        <img src="https://media.tenor.com/13VnwKt5qS0AAAAd/waiting.gif">
+    </body>
+</html>
