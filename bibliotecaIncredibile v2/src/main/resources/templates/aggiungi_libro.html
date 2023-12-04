@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Crea libro</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<style>
+			body {
+				background-color: black;
+				color: white
+			};
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card"
+					style="background-color: black; color: white">
+					<br><br>
+					<h1 class="text-center"> Aggiungi libro </h1>
+					<div class="card-body" style="background-color: black; color: white">
+						<form th:action="@{/libro}" th:object="${libro}" method="POST">
+							<br>
+							<div class="form-group">
+								<label> libro titolo </label>
+								<input type="text" name="titolo" th:field="*{titolo}" class="form-control"
+									placeholder="Inserisci il titolo libro" />
+							</div>
+							<br>
+							<div class="form-group">
+								<label> libro autore </label>
+								<input type="text" name="autore" th:field="*{autore}" class="form-control"
+									placeholder="Inserisci l'autore' libro" />
+							</div>
+							<br>
+							<div class="box-footer">
+								<button type="submit" class="btn btn-primary">
+									Invia
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

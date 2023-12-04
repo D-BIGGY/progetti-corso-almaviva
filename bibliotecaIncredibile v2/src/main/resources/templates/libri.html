@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Insert title here</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<style>
+			body{
+            background-color: black;
+            color: white};
+            img{
+            background-color: black;
+            color: white};
+    	</style>
+	</head>
+	<body>
+        <div class = "container">
+            <div class="row">
+                <h1>Ciao amministratore! Ecco la lista dei libri</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <a th:href="@{/libri/nuovo}" class="btn btn-primary btn-sm mb-3">Aggiungi Libro</a>
+                </div>
+            </div>
+            <table class = "table table-striped table-bordered">
+                <thead class="table-dark">
+                    <tr>
+						<th th:text="copertina">gugu gaga'</th>
+                        <th th:text="#{colonna_titolo}"></th>
+                        <th th:text="#{colonna_autore}">Autore</th>
+                          <th>prezzo</th>
+                        <th th:text="#{colonna_disponibilita}">Disponibilita'</th>
+                        <th>-</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each = "libro: ${libri}">
+						<td style="text-align: center;"><img th:src="${libro.immagine}" style="height: 20%; width: 90px;"/></td>
+                        <td th:text = "${libro.titolo}" class="table-dark"></td>
+                        <td th:text = "${libro.autore}" class="table-dark"></td>
+                        <td th:text = "${libro.preso}" class="table-dark"></td>
+                          <td th:text = "${libro.prezzo}" class="table-dark"></td>
+                        <td class="table-dark">
+                            <a th:href="@{/libro/{id}(id=${libro.id})}" class="btn btn-danger" th:text="#{button_rimuovi}" >
+                                Cancella
+                            </a>
+                            <br><br>
+	                        <a th:href="@{/libro/{id}(id=${libro.id})}" class="btn btn-info" th:text="#{button_modifica}" >
+	                            Modifica
+	                        </a>
+						</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="row">
+                <div class="col-lg-3">
+                    <a th:href="@{/incredibile}" class="btn btn-primary btn-sm mb-3">get Bozo'd</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
