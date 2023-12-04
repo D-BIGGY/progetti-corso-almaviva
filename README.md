@@ -1,6 +1,6 @@
 # progetti-corso-almaviva
 
-this is the generic folder for all the project created by group 4 (Crla Cupani, Alessio Girardi, Lorenzo Dalla Costa)
+this is the generic folder for all the project created by group 4 (Carla Cupani, Alessio Ghirardi, Lorenzo Dalla Costa)
 during the formative course by Umana forma for Almaviva digital tech.
 
 In this repository are prensent all of the works orded by subfolders
