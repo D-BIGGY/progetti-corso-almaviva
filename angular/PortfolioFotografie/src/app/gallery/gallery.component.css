@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:500);
 
 :root {
-    font-size: 10px;
+    font-size: 5px;
 }
 
 *,
@@ -28,7 +28,7 @@ body {
     line-height: 1.5;
     text-align: center;
     padding: 3.5rem 0;
-    color: #1a1a1a;
+    color: var(--black-color);
 }
 
 .heading span {
