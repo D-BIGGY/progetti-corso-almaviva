@@ -1,0 +1,17 @@
+<!--<div class="container" style="width: 18rem;">
+    <img [src]="lol ? immagine_defeat : ''" alt="">
+    <p>{{variabile}}</p>
+    <div class="card-body">
+      <h5 class="card-title">{{disponibile ? macchine[0].modello : 'unlucky'}}</h5>
+      <p class="card-text">{{disponibile ? macchine[0].potenza : 'bozo'}}</p>
+      <button [disabled] = "bottone_attivo" (click) = "onClick(this)" class="btn btn-primary">fai qualosa</button>
+    </div>
+    
+</div>-->
+<div class="input-group">
+    <div class="input-group-prepend">
+        <span class ="input-group-text">{{titolo}}</span>
+    </div>
+    <!--<textarea class="form-control" id="" cols="30" rows="10" aria-label="Testo" (input) ="onClick($event)"></textarea>-->
+    <input class = "form-control" aria-label="Testo" type="text" [(ngModel)] = "titolo">
+</div>

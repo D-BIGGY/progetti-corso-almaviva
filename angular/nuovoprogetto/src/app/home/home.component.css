@@ -1,0 +1,13 @@
+immagini_inziali{
+    width: 32%;
+}
+.carousel {
+    margin-left: auto;
+    margin-right: auto;
+    width:640px;
+    height:750px;
+  }
+
+  .carousel img{
+    max-height: 750px;
+  }

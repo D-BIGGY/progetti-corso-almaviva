@@ -1,0 +1,60 @@
+<!--
+     <div [ngStyle]="styles">
+    
+    <p *ngIf="visibile; else altrarobba">componente1 works!</p>
+    <ng-template #altrarobba>gugu gaga</ng-template>
+
+     <img [src]="lol" alt=""> 
+
+    <br><br>
+    <p>-------------------- *ngFor</p>
+    <br><br>
+    
+    <ul>
+        <div *ngFor="let persona of datiricevuti; index as i; count as lung">
+                <p *ngIf="i == 0">lunghezza totale delle persone presenti {{lung}}</p> 
+                {{i}} - {{persona.nome}} {{persona.cognome}}
+                <p *ngIf="persona.disponibile">Disponibile</p>
+                <p *ngIf="!persona.disponibile">non disponibile</p>
+        </div>
+    </ul>
+    
+    <p>-------------------- parte lo switch</p> 
+    <br><br>
+    
+    <ul>
+        <div [ngSwitch]="confrontoSW">
+            <div *ngSwitchCase="0">case 0</div>
+            <div *ngSwitchCase="1">case 1</div>
+            <div *ngSwitchCase="2">case 2</div>
+            <div *ngSwitchCase="'ciao'">case stringa</div>
+            <div *ngSwitchDefault>case default</div>
+        </div>
+    </ul>
+    
+    <p>-------------------- parte dello style div</p>
+    <br><br>
+    
+    <div>
+        bubboli
+        <button (click)= 'setStyles()'>stile modificato</button>
+        <br><br>
+        <div>
+            <div *ngFor="let persona of datiricevuti">
+                <p class="cerchio" [ngClass]="persona.disponibile ? 'cerchio2':'cerchio1'"></p>
+                {{persona.nome}}
+                <hr style="width:100%; border-width: 3px; opacity:1">
+            </div>
+        </div>
+    </div>
+<button (click)="inviadati()">invia dati al padre</button>
+    
+
+</div>   
+    -->
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+
+
+
+
