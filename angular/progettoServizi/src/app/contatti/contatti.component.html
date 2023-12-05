@@ -1,0 +1,12 @@
+<div *ngFor="let macchina of macchine; index as i; count as lung">
+    <!-- <p *ngIf="i == 0">lunghezza totale delle macchine presenti {{lung}}</p>  -->
+    <p *ngIf="i==id">{{i}} - {{macchina.modello}} {{macchina.potenza}}</p>    
+    
+    <!--
+        <p>macchina selezionata : {{macchina.modello}} - {{macchina.potenza}}</p> 
+        utilizzando il metodo per aggiornare bisogna utilizzare l' ngmodel allora è molto meglio mettere un ngIf dentro un for così cambia il componente ogni volta in automatico (è 10 volte più facile)
+        <p *ngIf="persona.disponibile">Disponibile</p>
+        <p *ngIf="!persona.disponibile">non disponibile</p>
+    -->
+    
+</div>

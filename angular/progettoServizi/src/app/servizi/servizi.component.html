@@ -1,0 +1,20 @@
+<form #formPrincipale = "ngForm" (ngSubmit)="onSubmit(formPrincipale)" style="color:white; text-align: center;" >
+    <label for="fname">Nome:</label><br>
+    <input type="text" id="frame" name="fname" ngModel required><br>
+    <label for="lname">Cognome:</label><br>
+    <input type="text" id="lname" name="lname" ngModel required ><br>
+    <label for="mail">E-mail:</label><br>
+    <input type="text" id="fmail" name="fmail" ngModel required><br>
+    <button type="submit" [disabled]="!formPrincipale.valid">Invia</button>
+</form>
+<br><br><br><br><br><br><br><br><br>
+<form [formGroup]="formreattivo" style="color:white; text-align: center;" (ngSubmit)="onSubmitReactive()">
+    <label for="fname1">Nome:</label><br>
+    <input type="text" id="frame1" name="fname" formControlName="nome"><br>
+    <p *ngIf="!formreattivo.get('nome')?.valid && formreattivo.get('nome')?.touched">nome non valido</p>
+    <label for="lname1">Cognome:</label><br>
+    <input type="text" id="lname1" name="lname" formControlName="cognome"><br>
+    <label for="mail1">E-mail:</label><br>
+    <input type="text" id="fmail1" name="fmail" formControlName="email"><br>
+    <button type="submit" [disabled]="!formreattivo.valid">Invia</button>
+</form>

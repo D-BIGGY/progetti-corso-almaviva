@@ -1,0 +1,67 @@
+.ng-invalid{
+    /*background-image: url(https://www.lascimmiapensa.com/wp-content/uploads/2022/03/GigaChad.jpg);*/
+    background-image: url(https://ongpng.com/wp-content/uploads/2023/08/Drake-meme-hotbling-1.png);
+    /*background-image: url("https://i.scdn.co/image/56fc3a11d95a9b44dabf22ca2dc56b670541c3f5.jpg");*/
+    height: 150px;
+    width: 100%;
+    background-size: contain;
+}
+
+input.ng-valid{
+    background: green;
+}
+
+form.ng-valid{
+    /*background-image:url(https://us-tuna-sounds-images.voicemod.net/d9195612-8701-4346-a654-6e97e8a35b8b.png);*/
+    background-image: url(drakeOK.png);
+    height: 150px;
+    width: 100%;
+    background-size: contain;
+}
+
+input.ng-invalid{
+    height: 20px;
+    width:50%;
+    border:1px solid black;
+    animation: blink 2s infinite;
+  }
+  @keyframes blink{
+    0% {
+      background: red;
+    }
+    20% {
+      background: green;
+    }
+    40% {
+      background: yellow;
+    }
+    60% {
+      background: blue;
+    }
+    80% {
+      background: orange;
+    }
+    100% {
+      background: red;
+    }
+  }
+  @-webkit-keyframes blink{
+    0% {
+      background: red;
+    }
+    20% {
+      background: green;
+    }
+    40% {
+      background: yellow;
+    }
+    60% {
+      background: blue;
+    }
+    80% {
+      background: orange;
+    }
+    100% {
+      background: red;
+    }
+  }
