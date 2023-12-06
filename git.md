@@ -56,3 +56,6 @@ git checkout **nome branch per spostarsi**
 ### **FEATURE**: <br> branch in cui vengono sviluppate feature per i diversi componenti
 ### **RELEASE**: <br> branch in cui vengono megiati prima del main per assicurarsi che non ci siano errori
 ### **HOTFIX**: <br> (patch)
+
+per mergare nel develop e risolvere i conflitti, invece di mergare la feature direttamente nel develop
+si merga prima il develop nel branch, risolvi i conflitti. Dopo avere un branch sicuro vado su develop e faccio il merge
