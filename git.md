@@ -1,4 +1,4 @@
-# **COMANDI GIT E IMPOSTAZIONI**
+# <p style="text-align: center"> **GIT** </p>
 
 ## **IMPOSTAZIONI DA CMD DI GIT**
 
@@ -59,3 +59,26 @@ git checkout **nome branch per spostarsi**
 
 per mergare nel develop e risolvere i conflitti, invece di mergare la feature direttamente nel develop
 si merga prima il develop nel branch, risolvi i conflitti. Dopo avere un branch sicuro vado su develop e faccio il merge
+
+# MAVEN
+## CICLO DI VITA MAVEN
+### - VALIDATE: verifica la correttezza del progetto
+### - COMPILE: compila il codice sorgente
+### - TEST: esegue i test unitari
+### - PACKAGE: impacchetta il codice compilato
+### - INTEGRATION TEST: esegue test aggiunivi, che richiedono il pacchetto
+### - VERIFY: se il pacchetto esiste in fase di runtime
+### - INSTALL: installa il file del pacchetto
+### - DEPLOY: esegue il deploy del file del pacchetto su un server o repository remoto
+### - CLEAN: utilizzato per pulire l'output delle build precedenti
+
+# LOMBOK
+libreria opensource per java che attraverso annotazioni aiuta ascrivere meno codice, si collega all'editor o all' IDE
+
+## ANNOTAZIONI
+@getter
+@setter
+@data
+...(gurda slide)
+
+per fare un getter o setter customizzato dobbiamo fare l'verride
