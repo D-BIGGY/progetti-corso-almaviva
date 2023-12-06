@@ -2,7 +2,7 @@
 
 ## **IMPOSTAZIONI DA CMD DI GIT**
 
-### git --version (controlli la versione git è installata nella macchina) -> **CMD DI WINDOWS**
+### git --version (controlli la versione git è installata nella macchina) -> **CMD DI WINDOWS (windows/operator button + R)**
 ### $ git config --global user.name "**USERNAME A PIACERE**"
 ### $ git config --global user.mail [**LA TUA MAIL**]
 ### $ git remote add origin (URL) [**ORIGIN E' COME UNA VARIABILE**]
@@ -35,6 +35,8 @@ scaricare aggiornamenti dal repository online
 unire 2 branch che differiscono
 **Ti devi mettere nel branch principale e poi mergare quello secondario**
 
+### **git fetch:** <br>
+forza il controllo degli aggiornamenti
 
 
 ## CONFLITTI: 
