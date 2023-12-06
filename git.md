@@ -4,7 +4,7 @@
 
 ### git --version (controlli la versione git è installata nella macchina) -> **CMD DI WINDOWS (windows/operator button + R)**
 ### $ git config --global user.name "**USERNAME A PIACERE**"
-### $ git config --global user.mail [**LA TUA MAIL**]
+### $ git config --global user.email [**LA TUA MAIL**]
 ### $ git remote add origin (URL) [**ORIGIN E' COME UNA VARIABILE**]
 <br><br><br>
 
@@ -38,6 +38,8 @@ unire 2 branch che differiscono
 ### **git fetch:** <br>
 forza il controllo degli aggiornamenti
 
+### **.gitingnore template:**
+serie di file che vengono ignorati da git (versione migliorata di **.gitignore**)
 
 ## CONFLITTI: 
 ### **3 OPZIONI:**
