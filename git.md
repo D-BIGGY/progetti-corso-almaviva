@@ -49,3 +49,10 @@ serie di file che vengono ignorati da git (versione migliorata di **.gitignore**
 
 (publish branch allinea quello in locale con quello online)
 git checkout **nome branch per spostarsi**
+
+## **DIFFERENTI TIPOLOGIE DI BRANCH**
+### **MAIN**: <br> branch principale
+### **DEVELOP**: <br> branch in cui vengono effettiati esperimenti e dove si svolge lo svilupo
+### **FEATURE**: <br> branch in cui vengono sviluppate feature per i diversi componenti
+### **RELEASE**: <br> branch in cui vengono megiati prima del main per assicurarsi che non ci siano errori
+### **HOTFIX**: <br> (patch)
