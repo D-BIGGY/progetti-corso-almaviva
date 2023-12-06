@@ -46,3 +46,6 @@ serie di file che vengono ignorati da git (versione migliorata di **.gitignore**
 #### **1. SCEGLIERE QUELLA CHE HAI FATTO TU**
 #### **2. SCEGLIERE QUELLA CHE STA VENENDO PULLATA**
 #### **3. SCEGLIERE ENTRAMBE**
+
+(publish branch allinea quello in locale con quello online)
+git checkout **nome branch per spostarsi**
